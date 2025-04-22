@@ -69,33 +69,6 @@ The data is stored in CSV format.
 3. **Model Training**:
    This repository contains code to train **SVM models** with different kernels (linear, polynomial, RBF, and sigmoid) to predict whether an individual has heart disease.
 
-   Example of model training and evaluation:
-   ```python
-   from sklearn.svm import SVC
-   from sklearn.model_selection import train_test_split
-   from sklearn.preprocessing import StandardScaler
-   from sklearn.metrics import accuracy_score
-
-   # Split data
-   X = data.drop(columns=['HeartDiseaseorAttack'])
-   y = data['HeartDiseaseorAttack']
-   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-   # Scale features
-   scaler = StandardScaler()
-   X_train_scaled = scaler.fit_transform(X_train)
-   X_test_scaled = scaler.transform(X_test)
-
-   # Train SVM model
-   model = SVC(kernel='linear')
-   model.fit(X_train_scaled, y_train)
-
-   # Predict and evaluate
-   y_pred = model.predict(X_test_scaled)
-   accuracy = accuracy_score(y_test, y_pred)
-   print(f'Accuracy: {accuracy}')
-   ```
-
 4. **Results**:
    After training the model, you can visualize the accuracy and performance of the models using the **confusion matrix**, **accuracy score**, and **classification report**.
 
