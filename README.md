@@ -76,11 +76,6 @@ The data is stored in CSV format.
 
 The repository includes code to test multiple SVM models with various kernels (linear, polynomial, RBF, and sigmoid). Each model is evaluated for accuracy using standard classification metrics.
 
-### Example Output:
-- **Accuracy**: 0.85
-- **Confusion Matrix**: Shows the number of true positives, false positives, true negatives, and false negatives.
-- **Classification Report**: Includes precision, recall, and F1-score for both classes.
-
 ### Visualization:
 - **Confusion Matrix Heatmap**: Used to visually assess model performance.
 - **Model Comparison Graph**: Shows the accuracy of different SVM models.
