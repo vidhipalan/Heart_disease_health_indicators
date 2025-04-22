@@ -74,7 +74,7 @@ The data is stored in CSV format.
 
 ## Models and Results
 
-The repository includes code to test multiple SVM models with various kernels (linear, polynomial, RBF, and sigmoid). Each model is evaluated for accuracy using standard classification metrics.
+The repository includes code to test multiple SVM model (linear). Each model is evaluated for accuracy using standard classification metrics.
 
 ### Visualization:
 - **Confusion Matrix Heatmap**: Used to visually assess model performance.
